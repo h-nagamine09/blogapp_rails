@@ -1,15 +1,28 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Blogapp</title>
+    <title><%= page_title %></title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %> 
+    <%# <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
-    <%= yield %>
+    <div id="container">
+      <header>
+        <%= render "shared/header"%> #ヘッダー部分
+      </header>
+      <main>
+        <%= yield %> #index（コンテンツ部分）
+      </main>
+      <aside id="sidebar">
+        <%= render "shared/sidebar" %> #サイドバー部分
+      </aside>
+      <footer>
+        <%= render "shared/footer" %> #フッター部分
+      </footer>
+    </div>
   </body>
 </html>
