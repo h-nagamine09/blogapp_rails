@@ -12,12 +12,14 @@ class MembersController < ApplicationController
   end
   # リソースを新しく追加するためのフォームを表示
   def new
+    @member = Member.new(1980, 1, 1) #引数に誕生日の初期値を指定
   end
   # リソースを新しく作成(テーブルに新しいレコードを作成する)
   def create
   end
   # 作成済みのリソースを更新するためのフォームを作成(既存のレコードのカラムを更新する)
   def edit
+    @member = Member.find(params[:id])
   end
   # 作成済みのリソースを上書き（既存のレコードカラムを更新する）
   def update
