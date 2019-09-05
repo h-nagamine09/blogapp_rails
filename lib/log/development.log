@@ -1,0 +1,1555 @@
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:33:38 +0900
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/nagaminehiroki/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/nagaminehiroki/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/railties-6.0.0/lib/rails/templates/rails/welcome/index.html.erb (Duration: 7.2ms | Allocations: 485)
+Completed 200 OK in 16ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 2763)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:42:43 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (uninitialized constant TopController
+Did you mean?  ActionController
+               ToppageController):
+  
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `const_get'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:282:in `block in constantize'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `each'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `inject'
+activesupport (6.0.0) lib/active_support/inflector/methods.rb:280:in `constantize'
+activesupport (6.0.0) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (6.0.0) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:45:in `controller'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:31:in `serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.0) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.0) lib/action_dispatch/routing/route_set.rb:837:in `call'
+rack (2.0.7) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.7) lib/rack/etag.rb:25:in `call'
+rack (2.0.7) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.7) lib/rack/head.rb:12:in `call'
+actionpack (6.0.0) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.7) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.7) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.0) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.0) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.0) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:43:11 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 93)
+Completed 500 Internal Server Error in 313ms (ActiveRecord: 0.0ms | Allocations: 355424)
+
+
+  
+ActionView::Template::Error (undefined method `javascript_pack_tag' for #<#<Class:0x00007ff5c9a90e68>:0x00007ff5c9a8b4e0>
+Did you mean?  javascript_path
+               javascript_tag):
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+    12:   <body>
+  
+app/views/layouts/application.html.erb:9
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:44:08 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+Completed 200 OK in 5ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 3203)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:44:16 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms | Allocations: 3264)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:45:10 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 87)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3258)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 13:47:12 +0900
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 395)
+Completed 200 OK in 126ms (Views: 116.8ms | ActiveRecord: 0.0ms | Allocations: 288605)
+
+
+Started GET "/about" for 127.0.0.1 at 2019-09-02 14:26:52 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#about as HTML
+  Rendering toppage/about.html.erb within layouts/application
+  Rendered toppage/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 135)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3317)
+
+
+Started GET "/ab" for 127.0.0.1 at 2019-09-02 14:27:22 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/ab"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2019-09-02 14:30:49 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 118)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 2426)
+
+
+Started GET "/lesson/step1/sato" for 127.0.0.1 at 2019-09-02 14:34:16 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+SyntaxError (/Users/nagaminehiroki/Desktop/rubyonrails/blogapp/app/controllers/lesson_controller.rb:3: syntax error, unexpected ';', expecting ']'
+...n: "こんにちは、#{prams[;name]}さん"
+...                              ^
+/Users/nagaminehiroki/Desktop/rubyonrails/blogapp/app/controllers/lesson_controller.rb:5: unterminated string meets end of file
+/Users/nagaminehiroki/Desktop/rubyonrails/blogapp/app/controllers/lesson_controller.rb:5: syntax error, unexpected end-of-input, expecting tSTRING_DEND):
+  
+app/controllers/lesson_controller.rb:3: syntax error, unexpected ';', expecting ']'
+app/controllers/lesson_controller.rb:5: unterminated string meets end of file
+app/controllers/lesson_controller.rb:5: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/controllers/lesson_controller.rb:3: syntax error, unexpected ';', expecting ']'
+app/controllers/lesson_controller.rb:5: unterminated string meets end of file
+app/controllers/lesson_controller.rb:5: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+app/controllers/lesson_controller.rb:3: syntax error, unexpected ';', expecting ']'
+app/controllers/lesson_controller.rb:5: unterminated string meets end of file
+app/controllers/lesson_controller.rb:5: syntax error, unexpected end-of-input, expecting tSTRING_DEND
+Started GET "/lesson/step1/sato" for 127.0.0.1 at 2019-09-02 14:34:33 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step1 as HTML
+  Parameters: {"name"=>"sato"}
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 0.0ms | Allocations: 83139)
+
+
+  
+NameError (undefined local variable or method `prams' for #<LessonController:0x00007faeac77e900>
+Did you mean?  params
+               params=):
+  
+app/controllers/lesson_controller.rb:3:in `step1'
+Started GET "/lesson/step1/sato" for 127.0.0.1 at 2019-09-02 14:36:19 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step1 as HTML
+  Parameters: {"name"=>"sato"}
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.9ms | ActiveRecord: 0.0ms | Allocations: 777)
+
+
+Started GET "/lesson/step2" for 127.0.0.1 at 2019-09-02 14:39:49 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step2 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 538)
+
+
+Started GET "/lesson/step3" for 127.0.0.1 at 2019-09-02 14:44:28 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step3 as HTML
+Redirected to http://127.0.0.1:3000/lesson/step4
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 847)
+
+
+Started GET "/lesson/step4" for 127.0.0.1 at 2019-09-02 14:44:29 +0900
+Processing by LessonController#step4 as HTML
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.0ms | Allocations: 42711)
+
+
+  
+NoMethodError (undefined method `rendr' for #<LessonController:0x00007faeb139bd60>
+Did you mean?  render
+               end):
+  
+app/controllers/lesson_controller.rb:15:in `step4'
+Started GET "/lesson/step4" for 127.0.0.1 at 2019-09-02 14:44:38 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step4 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 530)
+
+
+Started GET "/lesson/step5" for 127.0.0.1 at 2019-09-02 14:47:03 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step5 as HTML
+Redirected to http://127.0.0.1:3000/lesson/step6
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 833)
+
+
+Started GET "/lesson/step6" for 127.0.0.1 at 2019-09-02 14:47:03 +0900
+Processing by LessonController#step6 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.6ms | ActiveRecord: 0.0ms | Allocations: 546)
+
+
+Started GET "/lesson/step5" for 127.0.0.1 at 2019-09-02 14:47:31 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step5 as HTML
+Redirected to http://127.0.0.1:3000/lesson/step6
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 836)
+
+
+Started GET "/lesson/step6" for 127.0.0.1 at 2019-09-02 14:47:31 +0900
+Processing by LessonController#step6 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 561)
+
+
+Started GET "/lesson/step6" for 127.0.0.1 at 2019-09-02 14:47:44 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step6 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 544)
+
+
+Started GET "/lesson/step5" for 127.0.0.1 at 2019-09-02 14:47:47 +0900
+Processing by LessonController#step5 as HTML
+Redirected to http://127.0.0.1:3000/lesson/step6
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 825)
+
+
+Started GET "/lesson/step6" for 127.0.0.1 at 2019-09-02 14:47:47 +0900
+Processing by LessonController#step6 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 400)
+
+
+Started GET "/lesson/step6" for 127.0.0.1 at 2019-09-02 14:48:14 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step6 as HTML
+  Rendering text template
+  Rendered text template (Duration: 0.0ms | Allocations: 2)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 547)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 22:12:24 +0900
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 112)
+Completed 200 OK in 6ms (Views: 5.5ms | ActiveRecord: 0.0ms | Allocations: 3227)
+
+
+Started GET "/step7" for 127.0.0.1 at 2019-09-02 22:12:35 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/step7"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/lesson/step7" for 127.0.0.1 at 2019-09-02 22:12:50 +0900
+Processing by LessonController#step7 as HTML
+  Rendering lesson/step7.html.erb within layouts/application
+  Rendered lesson/step7.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+Completed 200 OK in 5ms (Views: 4.4ms | ActiveRecord: 0.0ms | Allocations: 2904)
+
+
+Started GET "/lesson/step7" for 127.0.0.1 at 2019-09-02 22:13:04 +0900
+Processing by LessonController#step7 as HTML
+  Rendering lesson/step7.html.erb within layouts/application
+  Rendered lesson/step7.html.erb within layouts/application (Duration: 0.3ms | Allocations: 106)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started GET "/lesson/step8" for 127.0.0.1 at 2019-09-02 22:14:46 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step8 as HTML
+  Rendering lesson/step7.html.erb within layouts/application
+  Rendered lesson/step7.html.erb within layouts/application (Duration: 0.1ms | Allocations: 6)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2286)
+
+
+Started GET "/lesson/step9" for 127.0.0.1 at 2019-09-02 22:17:47 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step9 as HTML
+  Rendering lesson/step9.html.erb within layouts/application
+  Rendered lesson/step9.html.erb within layouts/application (Duration: 0.3ms | Allocations: 82)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3271)
+
+
+Started GET "/lesson/step9" for 127.0.0.1 at 2019-09-02 22:17:55 +0900
+Processing by LessonController#step9 as HTML
+  Rendering lesson/step9.html.erb within layouts/application
+  Rendered lesson/step9.html.erb within layouts/application (Duration: 0.3ms | Allocations: 101)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3269)
+
+
+Started GET "/lesson/step10" for 127.0.0.1 at 2019-09-02 22:22:36 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step10 as HTML
+  Rendering lesson/step10.html.erb within layouts/application
+  Rendered lesson/step10.html.erb within layouts/application (Duration: 0.3ms | Allocations: 105)
+Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3286)
+
+
+Started GET "/lesson/step11" for 127.0.0.1 at 2019-09-02 22:26:01 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step11 as HTML
+  Rendering lesson/step11.html.erb within layouts/application
+  Rendered lesson/step11.html.erb within layouts/application (Duration: 0.5ms | Allocations: 126)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 3310)
+
+
+Started GET "/lesson/step11" for 127.0.0.1 at 2019-09-02 22:26:49 +0900
+Processing by LessonController#step11 as HTML
+  Rendering lesson/step11.html.erb within layouts/application
+  Rendered lesson/step11.html.erb within layouts/application (Duration: 0.3ms | Allocations: 115)
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 3282)
+
+
+Started GET "/lesson/step11" for 127.0.0.1 at 2019-09-02 22:27:22 +0900
+Processing by LessonController#step11 as HTML
+  Rendering lesson/step11.html.erb within layouts/application
+  Rendered lesson/step11.html.erb within layouts/application (Duration: 0.1ms | Allocations: 9)
+Completed 200 OK in 3ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 2150)
+
+
+Started GET "/lesson/step12" for 127.0.0.1 at 2019-09-02 22:29:32 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step12 as HTML
+  Rendering lesson/step12.html.erb within layouts/application
+  Rendered lesson/step12.html.erb within layouts/application (Duration: 0.3ms | Allocations: 91)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 3273)
+
+
+Started GET "/lesson/step12" for 127.0.0.1 at 2019-09-02 22:30:20 +0900
+Processing by LessonController#step12 as HTML
+  Rendering lesson/step12.html.erb within layouts/application
+  Rendered lesson/step12.html.erb within layouts/application (Duration: 0.3ms | Allocations: 86)
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.0ms | Allocations: 3255)
+
+
+Started GET "/lesson/step12" for 127.0.0.1 at 2019-09-02 22:30:29 +0900
+Processing by LessonController#step12 as HTML
+  Rendering lesson/step12.html.erb within layouts/application
+  Rendered lesson/step12.html.erb within layouts/application (Duration: 0.4ms | Allocations: 115)
+Completed 200 OK in 5ms (Views: 4.1ms | ActiveRecord: 0.0ms | Allocations: 3284)
+
+
+Started GET "/lesson/step13" for 127.0.0.1 at 2019-09-02 22:33:07 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step13 as HTML
+  Rendering lesson/step13.html.erb within layouts/application
+  Rendered lesson/step13.html.erb within layouts/application (Duration: 37.0ms | Allocations: 4404)
+Completed 200 OK in 42ms (Views: 41.2ms | ActiveRecord: 0.0ms | Allocations: 7584)
+
+
+Started GET "/lesson/step14" for 127.0.0.1 at 2019-09-02 22:37:47 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step14 as HTML
+  Rendering lesson/step14.html.erb within layouts/application
+  Rendered lesson/step14.html.erb within layouts/application (Duration: 0.4ms | Allocations: 122)
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 3307)
+
+
+Started GET "/lesson/step14" for 127.0.0.1 at 2019-09-02 22:39:35 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step14 as HTML
+  Rendering lesson/step14.html.erb within layouts/application
+  Rendered lesson/step14.html.erb within layouts/application (Duration: 0.1ms | Allocations: 18)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2317)
+
+
+Started GET "/lesson/step15" for 127.0.0.1 at 2019-09-02 22:45:26 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step15 as HTML
+  Rendering lesson/step15.html.erb within layouts/application
+  Rendered lesson/step15.html.erb within layouts/application (Duration: 0.3ms | Allocations: 146)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms | Allocations: 3331)
+
+
+Started GET "/lesson/step16" for 127.0.0.1 at 2019-09-02 22:50:58 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step16 as HTML
+  Rendering lesson/step16.html.erb within layouts/application
+  Rendered lesson/step16.html.erb within layouts/application (Duration: 0.6ms | Allocations: 330)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 3518)
+
+
+Started GET "/lesson/step16" for 127.0.0.1 at 2019-09-02 23:08:24 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by LessonController#step16 as HTML
+  Rendering lesson/step16.html.erb within layouts/application
+  Rendered lesson/step16.html.erb within layouts/application (Duration: 0.3ms | Allocations: 153)
+Completed 200 OK in 5ms (Views: 4.8ms | ActiveRecord: 0.0ms | Allocations: 2293)
+
+
+Started GET "/lesson/step16" for 127.0.0.1 at 2019-09-02 23:08:24 +0900
+Processing by LessonController#step16 as HTML
+  Rendering lesson/step16.html.erb within layouts/application
+  Rendered lesson/step16.html.erb within layouts/application (Duration: 0.3ms | Allocations: 153)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 2294)
+
+
+Started GET "/" for 127.0.0.1 at 2019-09-02 23:08:28 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 109)
+Completed 200 OK in 6ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 2927)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:28:29 +0900
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 514)
+Completed 500 Internal Server Error in 148ms (ActiveRecord: 0.0ms | Allocations: 292204)
+
+
+  
+ActionView::Template::Error (Missing partial shared/_header with {:locale=>[:en], :formats=>[:html], :variants=>[], :handlers=>[:raw, :erb, :html, :builder, :ruby, :jbuilder]}. Searched in:
+  * "/Users/nagaminehiroki/Desktop/rubyonrails/blogapp/app/views"
+  * "/Users/nagaminehiroki/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/kaminari-core-1.1.1/app/views"
+  * "/Users/nagaminehiroki/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actiontext-6.0.0/app/views"
+  * "/Users/nagaminehiroki/.rbenv/versions/2.5.0/lib/ruby/gems/2.5.0/gems/actionmailbox-6.0.0/app/views"
+):
+    12:   <body>
+    13:     <div id="container">
+    14:       <header>
+    15:         <%= render "shared/header"%> #ヘッダー部分
+    16:       </header>
+    17:       <main>
+    18:         <%= yield %> #index（コンテンツ部分）
+  
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:30:02 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 213)
+  Rendered shared/_header.html.erb (Duration: 121.6ms | Allocations: 64348)
+Completed 500 Internal Server Error in 128ms (ActiveRecord: 0.0ms | Allocations: 67970)
+
+
+  
+ActionView::Template::Error (undefined method `contet_tag' for #<#<Class:0x00007f8043883e00>:0x00007f804387be80>
+Did you mean?  content_tag):
+    3: 
+    4: <nav class="menubar">
+    5:   <ul>
+    6:     <%= menu_link_to "TOP", :root %>
+    7:     <%= menu_link_to "ニュース", "#" %>
+    8:     <%= menu_link_to "ブログ", "#" %>
+    9:     <%= menu_link_to "会員名簿", "#"%>
+  
+app/helpers/application_helper.rb:11:in `block (2 levels) in menu_link_to'
+app/helpers/application_helper.rb:10:in `block in menu_link_to'
+app/helpers/application_helper.rb:9:in `menu_link_to'
+app/views/shared/_header.html.erb:6
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:31:35 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 1172)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4766)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= iamge_tag "logo.gif, size: "272x48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= iamge_tag "logo.gif, size: "272x48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:32:11 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 213)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 1159)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4746)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:32:13 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 67)
+Started GET "/" for ::1 at 2019-09-05 13:32:14 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 65)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 1429)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms | Allocations: 8870)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+  Rendered shared/_header.html.erb (Duration: 2.3ms | Allocations: 3207)
+Completed 500 Internal Server Error in 310ms (ActiveRecord: 0.0ms | Allocations: 373456)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= iamge_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:33:11 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 215)
+  Rendered shared/_header.html.erb (Duration: 0.7ms | Allocations: 1120)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4716)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= image_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= image_tag "logo.gif, size: "272*48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tSTRING_BEG, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:35:21 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 212)
+  Rendered shared/_header.html.erb (Duration: 0.8ms | Allocations: 1159)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 4745)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= image_tag "logo.gif, size: "272 x 48", alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= image_tag "logo.gif, size: "272 x 48", alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:35:37 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 213)
+  Rendered shared/_header.html.erb (Duration: 0.6ms | Allocations: 1157)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 4751)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!-- ヘッダー -->
+<%= image_tag "logo.gif, size: , alt: "Morning Glory" %>
+
+<nav class="menubar">
+  <ul>
+    <%= menu_link_to "TOP", :root %>
+    <%= menu_link_to "ニュース", "#" %>
+    <%= menu_link_to "ブログ", "#" %>
+    <%= menu_link_to "会員名簿", "#"%>
+    <%= menu_link_to "管理ページ", "#" %>
+  </ul>
+</nav>
+
+):
+1:    <!-- ヘッダー -->
+2:    <%= image_tag "logo.gif, size: , alt: "Morning Glory" %>
+3:    
+4:    <nav class="menubar">
+5:      <ul>
+6:        <%= menu_link_to "TOP", :root %>
+7:        <%= menu_link_to "ニュース", "#" %>
+8:        <%= menu_link_to "ブログ", "#" %>
+9:        <%= menu_link_to "会員名簿", "#"%>
+10:        <%= menu_link_to "管理ページ", "#" %>
+11:      </ul>
+12:    </nav>
+  
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_header.html.erb:2: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:4: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:6: syntax error, unexpected tCONSTANT, expecting ')'
+app/views/shared/_header.html.erb:7: syntax error, unexpected tIDENTIFIER, expecting ')'
+app/views/shared/_header.html.erb:11: syntax error, unexpected '<', expecting ')'
+app/views/shared/_header.html.erb:12: unknown regexp options - av
+app/views/shared/_header.html.erb:15: unterminated string meets end of file
+app/views/shared/_header.html.erb:15: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:15
+Started GET "/" for ::1 at 2019-09-05 13:38:36 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 212)
+  Rendered shared/_header.html.erb (Duration: 1.7ms | Allocations: 962)
+  Rendered shared/_sidebar.html.erb (Duration: 0.8ms | Allocations: 1197)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 5970)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# サイドバーのレイアウト %>
+<%= render "shared/login_form"%>
+
+<h2>最新ニュース</h2>
+  <ul>
+    <% 5.tims do |i| %>
+      <li><%= link_to "ニュースの見出し, "#"%></li>
+    <% end %>
+  </ul>
+
+  <h2>会員のブログ</h2>
+  <ul>
+    <% 5.times do |i| %>
+    <li><%= link_to "ブログの見出し", "#" %></li>
+    <% end %>
+  </ul>
+
+):
+1:    <%# サイドバーのレイアウト %>
+2:    <%= render "shared/login_form"%>
+3:    
+4:    <h2>最新ニュース</h2>
+5:      <ul>
+6:        <% 5.tims do |i| %>
+7:          <li><%= link_to "ニュースの見出し, "#"%></li>
+8:        <% end %>
+9:      </ul>
+10:    
+11:      <h2>会員のブログ</h2>
+12:      <ul>
+13:        <% 5.times do |i| %>
+14:        <li><%= link_to "ブログの見出し", "#" %></li>
+15:        <% end %>
+16:      </ul>
+  
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:21
+Started GET "/toppage" for ::1 at 2019-09-05 13:42:53 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  
+ActionController::RoutingError (No route matches [GET] "/toppage"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/root" for ::1 at 2019-09-05 13:43:01 +0900
+  
+ActionController::RoutingError (No route matches [GET] "/root"):
+  
+actionpack (6.0.0) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.0) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.0) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.0) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.7) lib/rack/method_override.rb:22:in `call'
+rack (2.0.7) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.0) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.7) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.0) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+railties (6.0.0) lib/rails/engine.rb:526:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-09-05 13:43:06 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 732)
+  Rendered shared/_sidebar.html.erb (Duration: 0.7ms | Allocations: 1140)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 4305)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# サイドバーのレイアウト %>
+<%= render "shared/login_form"%>
+
+<h2>最新ニュース</h2>
+  <ul>
+    <% 5.tims do |i| %>
+      <li><%= link_to "ニュースの見出し, "#"%></li>
+    <% end %>
+  </ul>
+
+  <h2>会員のブログ</h2>
+  <ul>
+    <% 5.times do |i| %>
+    <li><%= link_to "ブログの見出し", "#" %></li>
+    <% end %>
+  </ul>
+
+):
+1:    <%# サイドバーのレイアウト %>
+2:    <%= render "shared/login_form"%>
+3:    
+4:    <h2>最新ニュース</h2>
+5:      <ul>
+6:        <% 5.tims do |i| %>
+7:          <li><%= link_to "ニュースの見出し, "#"%></li>
+8:        <% end %>
+9:      </ul>
+10:    
+11:      <h2>会員のブログ</h2>
+12:      <ul>
+13:        <% 5.times do |i| %>
+14:        <li><%= link_to "ブログの見出し", "#" %></li>
+15:        <% end %>
+16:      </ul>
+  
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:21
+Started GET "/" for ::1 at 2019-09-05 13:44:55 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 205)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 943)
+  Rendered shared/_sidebar.html.erb (Duration: 0.7ms | Allocations: 1193)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 5937)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%# サイドバーのレイアウト %>
+<%= render "shared/login_form"%>
+
+<h2>最新ニュース</h2>
+  <ul>
+    <% 5.tims do |i| %>
+      <li><%= link_to "ニュースの見出し, "#"%></li>
+    <% end %>
+  </ul>
+
+  <h2>会員のブログ</h2>
+  <ul>
+    <% 5.times do |i| %>
+    <li><%= link_to "ブログの見出し", "#" %></li>
+    <% end %>
+  </ul>
+
+):
+1:    <%# サイドバーのレイアウト %>
+2:    <%= render "shared/login_form"%>
+3:    
+4:    <h2>最新ニュース</h2>
+5:      <ul>
+6:        <% 5.tims do |i| %>
+7:          <li><%= link_to "ニュースの見出し, "#"%></li>
+8:        <% end %>
+9:      </ul>
+10:    
+11:      <h2>会員のブログ</h2>
+12:      <ul>
+13:        <% 5.times do |i| %>
+14:        <li><%= link_to "ブログの見出し", "#" %></li>
+15:        <% end %>
+16:      </ul>
+  
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/shared/_sidebar.html.erb:11: unknown regexp option - h
+app/views/shared/_sidebar.html.erb:11: syntax error, unexpected tINTEGER, expecting ')'
+app/views/shared/_sidebar.html.erb:16: unknown regexp option - l
+app/views/shared/_sidebar.html.erb:19: unterminated string meets end of file
+app/views/shared/_sidebar.html.erb:19: syntax error, unexpected end-of-input, expecting ')'
+app/views/layouts/application.html.erb:21
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:08 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:10 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:11 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:12 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:13 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:13 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:14 +0900
+Started POST "/__web_console/repl_sessions/32834d1e268707240c2347f735668dbe/trace" for ::1 at 2019-09-05 13:45:15 +0900
+Started GET "/" for ::1 at 2019-09-05 13:47:50 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 205)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 943)
+  Rendered shared/_login_form.html.erb (Duration: 0.2ms | Allocations: 104)
+  Rendered shared/_sidebar.html.erb (Duration: 2.1ms | Allocations: 2250)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 6994)
+
+
+  
+ActionView::Template::Error (undefined method `tims' for 5:Integer
+Did you mean?  times):
+    3: 
+    4: <h2>最新ニュース</h2>
+    5:   <ul>
+    6:     <% 5.tims do |i| %>
+    7:       <li><%= link_to "ニュースの見出し","#" %></li>
+    8:     <% end %>
+    9:   </ul>
+  
+app/views/shared/_sidebar.html.erb:6
+app/views/layouts/application.html.erb:21
+Started GET "/" for ::1 at 2019-09-05 13:48:03 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 205)
+  Rendered shared/_header.html.erb (Duration: 1.2ms | Allocations: 943)
+  Rendered shared/_login_form.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered shared/_sidebar.html.erb (Duration: 1.3ms | Allocations: 695)
+  Rendered shared/_footer.html.erb (Duration: 8.3ms | Allocations: 136)
+Completed 200 OK in 17ms (Views: 16.3ms | ActiveRecord: 0.0ms | Allocations: 5821)
+
+
+Started GET "/" for ::1 at 2019-09-05 13:51:49 +0900
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 65)
+  Rendered shared/_header.html.erb (Duration: 1.0ms | Allocations: 726)
+  Rendered shared/_login_form.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered shared/_sidebar.html.erb (Duration: 0.3ms | Allocations: 207)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 28)
+Completed 200 OK in 44ms (Views: 42.5ms | ActiveRecord: 0.0ms | Allocations: 4523)
+
+
+Started GET "/" for ::1 at 2019-09-05 14:43:09 +0900
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by ToppageController#index as HTML
+  Rendering toppage/index.html.erb within layouts/application
+  Rendered toppage/index.html.erb within layouts/application (Duration: 0.1ms | Allocations: 66)
+  Rendered shared/_header.html.erb (Duration: 0.9ms | Allocations: 732)
+  Rendered shared/_login_form.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered shared/_sidebar.html.erb (Duration: 0.2ms | Allocations: 207)
+  Rendered shared/_footer.html.erb (Duration: 0.1ms | Allocations: 29)
+Completed 200 OK in 6ms (Views: 5.6ms | ActiveRecord: 0.0ms | Allocations: 3588)
+
+
