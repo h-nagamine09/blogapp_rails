@@ -1,13 +1,13 @@
 <% @page_title = "会員名簿" %> <!--@page_titleHTMLのタイトル生成に使われるインスタンス変数-->
 <h1><%= @page_title %></h1>
 
-<%= form_tag :search_members,method: :get, class: "search" do %>
+<%= form_tag :search_members, method: :get, class: "search" do %>
   <%= text_field_tag "q", params[:q] %>
   <%= submit_tag "検索" %>
 <% end %>
 
 <div class="toolbar">
-  <%=link_to "会員の新規登録", :new_member %>
+  <%= link_to "会員の新規登録", :new_member %>
 </div>
 
 <% if @members.present? %> <!--会員一覧が空欄かどうか調べる-->
@@ -24,17 +24,17 @@
       <% @members.each do |member| %>
         <tr>
           <td style="text-align: right"><%= member.number %></td>
-          <td><%= link_to member.name,member %></td>
+          <td><%= link_to member.name, member %></td>
           <td><%= member.full_name %></td>
           <td>
-            <%= link_to "編集",[:edit,member] %> |
-            <%= link_to "削除", member,method: :delete,
-            data: {confirm: "本当に削除しますか？"} %>
+            <%= link_to "編集", [:edit, member] %> |
+            <%= link_to "削除", member, method: :delete,
+              data: { confirm: "本当に削除しますか?" } %>
           </td>
         </tr>
       <% end %>
     </tbody>
   </table>
-  <% else %>
+<% else %>
   <p>会員情報がありません。</p>
 <% end %>
