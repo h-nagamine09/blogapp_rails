@@ -19,7 +19,7 @@ class MembersController < ApplicationController
 
   # リソースを新しく作成(テーブルに新しいレコードを作成する)
   def create
-    @menber = Member.new(params[:member])
+    @member = Member.new(params[:member])
     if @member.save
       redirect_to @member, notice: "会員を登録しました"
     else
@@ -34,10 +34,20 @@ class MembersController < ApplicationController
 
   # 作成済みのリソースを上書き（既存のレコードカラムを更新する）
   def update
+    @member = Member.find(params[:id]) #メンバーの値をDBから取得
+    @member.assign_attributes(params[:member]) #フォームからのデータをセット
+    if @member.save
+      redirect_to @member,notice: "会員情報を更新しました" #saveが成功するとTrueを返しDBを更新、noticeを表示
+    else
+      render "edit" #saveに失敗した場合edit画面を表示する
+    end
   end
 
   # 作成済みのリソースを削除（テーブルからレコードを削除）
   def destroy
+    @member = Member.find(params[:id]) #DBから会員情報を取得
+    @member.destroy #destroyメソッドで取得したデータを削除
+    redirect_to :members, notice: "会員を削除しました" #メンバー一覧ページにリダイレクト。noticeを表示させる
   end
 
   # リソースを検索するアクション
