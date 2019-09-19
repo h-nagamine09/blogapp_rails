@@ -6,8 +6,14 @@ class MembersController < ApplicationController
   def index
     @members = Member.order("number")
   end
-  # リソースの詳細を表示(リソースの属性を表示)
 
+  # リソースを検索するアクション
+  def search
+    @members = Member.search(params[:q]) #qには検索ワードが入ってくる
+    render "index"
+  end
+
+  # リソースの詳細を表示(リソースの属性を表示)
   def show
     @member = Member.find(params[:id])
   end
@@ -37,7 +43,7 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id]) #メンバーの値をDBから取得
     @member.assign_attributes(params[:member]) #フォームからのデータをセット
     if @member.save
-      redirect_to @member,notice: "会員情報を更新しました" #saveが成功するとTrueを返しDBを更新、noticeを表示
+      redirect_to @member, notice: "会員情報を更新しました" #saveが成功するとTrueを返しDBを更新、noticeを表示
     else
       render "edit" #saveに失敗した場合edit画面を表示する
     end
@@ -48,11 +54,5 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id]) #DBから会員情報を取得
     @member.destroy #destroyメソッドで取得したデータを削除
     redirect_to :members, notice: "会員を削除しました" #メンバー一覧ページにリダイレクト。noticeを表示させる
-  end
-
-  # リソースを検索するアクション
-  def search
-    @members = Member.search(params[:q]) #qには検索ワードが入ってくる
-    render "index"
   end
 end

@@ -47,3 +47,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'kaminari'
 
 gem 'nokogiri'
+
+gem 'email_validator', '~> 2.0', '>= 2.0.1'
