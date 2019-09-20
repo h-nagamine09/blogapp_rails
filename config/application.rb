@@ -32,6 +32,7 @@ module Blogapp
     # Don't generate system test files.
     config.generators.system_tests = nil
     config.time_zone = "Tokyo"
+    config.i18n.default_locale = :ja #国際化機能
 
     config.action_controller.permit_all_parameters = true #ストロングパラメーターを無効化する
   end
