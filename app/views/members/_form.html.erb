@@ -1,4 +1,5 @@
 <%= render "shared/errors", obj: @member %>
+
 <table class="attr">
     <!-- 背番号入力フォーム -->
     <tr>
@@ -38,7 +39,7 @@
       <th><%= Member.human_attribute_name(:administrator) %></th>
       <td>
         <%= form.check_box :administrator %>
-        <%= form.label :administrator %>
+        <%= form.label :administrator,"管理者" %>
       </td>
     </tr>
   </table>
