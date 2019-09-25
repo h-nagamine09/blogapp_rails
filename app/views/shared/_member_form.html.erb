@@ -1,0 +1,49 @@
+<%= render "shared/errors", obj: @member %>
+
+<table class="attr">
+    <!-- 背番号入力フォーム -->
+    <tr>
+      <th><%= form.label :number %></th>
+      <td><%= form.text_field :number, size: 8 %></td>
+    </tr>
+    <!-- ユーザー名の入力フォーム -->
+    <tr>
+      <th><%= form.label :name %></th>
+      <td><%= form.text_field :name %></td>
+    </tr>
+    <!-- 氏名の入力フォーム -->
+    <tr>
+      <th><%= form.label :full_name %></th>
+      <td><%= form.text_field :full_name %></td>
+    </tr>
+    <tr>
+      <!-- 性別の入力フォーム -->
+      <th><%= Member.human_attribute_name(:sex) %></th>
+      <td>
+        <%= form.radio_button :sex, 1 %>
+        <%= form.label :sex_1 %>
+        <%= form.radio_button :sex, 2 %>
+        <%= form.label :sex_2 %>
+      </td>
+    </tr>
+    <tr>
+      <th><%= form.label :birthday, for: "member_birthday_1i" %></th>
+      <td><%=form.date_select :birthday,
+        start_year: 1940, end_year: Time.current.year,use_month_numbers: true %></td>
+    </tr>
+    <tr>
+      <th><%= form.label :email %></th>
+      <td><%= form.text_field :email %></td>
+    </tr>
+    <!-- 管理者にだけチェックボックスを表示させる機能 -->
+    <% if controller.kind_of? (MembersController) %> <!--kind_of?でクラスの週類を調べ、MemberControllerの場合だけ管理者フラグのチェックボックスが使えるようにしている-->
+    <tr>
+      <th><%= Member.human_attribute_name(:administrator) %></th>
+      <td>
+        <%= form.check_box :administrator,
+            disabled: !current_member.administrrator? %>
+        <%= form.label :administrator %>
+      </td>
+    </tr>
+   <% end %>
+  </table>
