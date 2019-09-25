@@ -35,13 +35,19 @@
       <th><%= form.label :email %></th>
       <td><%= form.text_field :email %></td>
     </tr>
+    <% if @member.new_record? %>
+      <tr>
+        <th><%= form.label :password, "パスワード" %></th>
+        <td><%= form.text_field :password %></td>
+      </tr>
+    <% end %>
     <!-- 管理者にだけチェックボックスを表示させる機能 -->
     <% if controller.kind_of? (MembersController) %> <!--kind_of?でクラスの週類を調べ、MemberControllerの場合だけ管理者フラグのチェックボックスが使えるようにしている-->
     <tr>
       <th><%= Member.human_attribute_name(:administrator) %></th>
       <td>
         <%= form.check_box :administrator,
-            disabled: !current_member.administrrator? %>
+            disabled: !current_member.administrator? %>
         <%= form.label :administrator %>
       </td>
     </tr>

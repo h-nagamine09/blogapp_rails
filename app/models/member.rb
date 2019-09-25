@@ -24,6 +24,9 @@ class Member < ApplicationRecord
     validates :full_name, presence: true, length: { maximum: 20 }
     validates :email, email: { allow_blank: true}
 
+    attr_accessor :current_password #Current_passwordをMemberクラスに追加
+    validates :password, presence: {if: :current_password} #から文字でもnilでもない時に確認
+
   class << self
     def search(query)
       rel = order("number")

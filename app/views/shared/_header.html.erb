@@ -3,7 +3,7 @@
 <%# ログイン中のメンバーの氏名とログアウトのリンクを表示 %>
   <% if current_member %>
     <ul class="account-menu">
-      <%= menu_link_to current_member.name + "さん" :account %>
+      <%= menu_link_to current_member.name + "さん", :account %>
       <%= menu_link_to "ログアウト", :session,
           method: :delete, data: { confirm: "ログアウトしますか？"} %>
     </ul>
