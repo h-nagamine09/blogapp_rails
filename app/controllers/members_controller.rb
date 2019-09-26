@@ -6,12 +6,14 @@ class MembersController < ApplicationController
   # リソースの一覧を表示
   def index
     @members = Member.order("number")
+    .page(params[:page]).per(15) #ページネーション 15行
   end
 
   # リソースを検索するアクション
   def search
     @members = Member.search(params[:q]) #qには検索ワードが入ってくる
-    render "index"
+    .page(params[:page]).per(15)
+    render "index"    
   end
 
   # リソースの詳細を表示(リソースの属性を表示)

@@ -10,6 +10,8 @@ class ArticlesController < ApplicationController
     unless current_member&.administrator?
       @articles = @articles.visible
     end
+
+    @articles = @articles.page(params[:page]).per(5) #ペーズネーション 5行
   end
   #記事の詳細
   def show
