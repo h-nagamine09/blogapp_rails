@@ -1,0 +1,20 @@
+<% @page_title = @member ? @member.name + "さんのブログ" : "会員のブログ" %> <!--特定の会委員のブログか全会員のブログかを判別し切替、表示-->
+<h1><%= @page_title %></h1>
+
+<% if current_member %> <!--ユーザーがログイン中であればブログ記事を作成するnewアクションへのリンクを表示-->
+  <div class="toolbar"><%= link_to "ブログ記事の作成", :new_entry %></div>
+<% end %>
+
+    <% if @entries.present? %>
+      <% @entries.each do |entry| %>
+          <h2><%= entry.title %></h2>
+          <p>
+            <%= truncate(entry.body, length: 80) %>
+            <%= link_to "もっと読む",entry %>
+          </p>
+        <%= render "footer", entry: entry %>
+      <% end %>
+      <%= paginate @entries %>
+    <% else %>
+      <p>記事がありません。</p>
+    <% end %>

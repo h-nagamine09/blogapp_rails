@@ -1,6 +1,8 @@
 class Member < ApplicationRecord
   has_secure_password #パスワードの保存と認証のための仕組み gemfileのbcryptを有効にすることによって使用可
 
+  has_many :entries, dependent: :destroy #ブログ記事は会員に属する
+
   #numberのバリデーション
   validates :number, presence: true, #空かどうかをチェックする
     numericality: {
