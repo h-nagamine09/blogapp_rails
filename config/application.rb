@@ -37,6 +37,10 @@ module Blogapp
     config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '**', '*.{rb,yml}').to_s]
 
 
-    config.action_controller.permit_all_parameters = true #ストロングパラメーターを無効化する
+    config.action_controller.permit_all_parameters = false #ストロングパラメーターを無効化する trueで無効　falseで有効
+
+    config.exeptions_app = ->(env) do
+      ErrorsController.action(:show).call(env)
+    end
   end
 end

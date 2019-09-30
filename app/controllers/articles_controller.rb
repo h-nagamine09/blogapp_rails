@@ -11,7 +11,7 @@ class ArticlesController < ApplicationController
       @articles = @articles.visible
     end
 
-    @articles = @articles.page(params[:page]).per(5) #ペーズネーション 5行
+    @articles = @articles.page(params[:page]).per(5) #ページネーション 5行
   end
   #記事の詳細
   def show
@@ -35,7 +35,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(params[:article])
+    @article = Article.new(article_params)
     if @article.save
       redirect_to @article, notice: "ニュース記事を登録しました"
     else
@@ -45,7 +45,7 @@ class ArticlesController < ApplicationController
 
   def update
     @article = Article.find(params[:id])
-    @article.assign_attributes(params[:article])
+    @article.assign_attributes(article_params)
     if @article.save
       redirect_to @article, notice: "ニュース記事を更新しました"
     else
@@ -57,5 +57,12 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
     @article.destroy
     redirect_to :articles
+  end
+
+  # ストロングパラメータ
+  private def article_params
+    params.require(:article).permit(
+      :title,:body,:released_at,:no_expiration,:expired_at,:member_only
+    )
   end
 end

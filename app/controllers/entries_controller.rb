@@ -23,7 +23,7 @@ class EntriesController < ApplicationController
   end
   #新規作成 createアクションが実質の新規作成機能を担う
   def create
-    @entry = Entry.new(params[:entry])
+    @entry = Entry.new(entry_params)
     @entry.author = current_member #現在ログインしているユーザーを記事の筆者にする
     if @entry.save
       redirect_to @entry, notice: "記事を作成しました"
@@ -38,7 +38,7 @@ class EntriesController < ApplicationController
  # 更新
   def update
     @entry = current_member.entries.find(params[:id])
-    @entry.assign_attributes(params[:entry])
+    @entry.assign_attributes(entry_params)
     if @entry.save
       redirect_to @entry, notice: "記事を更新しました"
     else
@@ -50,5 +50,11 @@ class EntriesController < ApplicationController
     @entry = current_member.entries.find(params[:id])
     @entry.destroy
     redirect_to :entries, notice: "記事を削除しました"
+  end
+  # ストロングパラメータ
+  private def entry_params
+    params.require(:entry).permit(
+      :member_id,:title,:bdoy,:posted_at,:status
+    )
   end
 end

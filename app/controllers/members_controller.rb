@@ -13,7 +13,7 @@ class MembersController < ApplicationController
   def search
     @members = Member.search(params[:q]) #qには検索ワードが入ってくる
     .page(params[:page]).per(15)
-    render "index"    
+    render "index"
   end
 
   # リソースの詳細を表示(リソースの属性を表示)
@@ -28,7 +28,7 @@ class MembersController < ApplicationController
 
   # リソースを新しく作成(テーブルに新しいレコードを作成する)
   def create
-    @member = Member.new(params[:member])
+    @member = Member.new(member_params)
     if @member.save
       redirect_to @member, notice: "会員を登録しました"
     else
@@ -44,7 +44,7 @@ class MembersController < ApplicationController
   # 作成済みのリソースを上書き（既存のレコードカラムを更新する）
   def update
     @member = Member.find(params[:id]) #メンバーの値をDBから取得
-    @member.assign_attributes(params[:member]) #フォームからのデータをセット
+    @member.assign_attributes(member_params) #フォームからのデータをセット
     if @member.save
       redirect_to @member, notice: "会員情報を更新しました" #saveが成功するとTrueを返しDBを更新、noticeを表示
     else
@@ -57,5 +57,13 @@ class MembersController < ApplicationController
     @member = Member.find(params[:id]) #DBから会員情報を取得
     @member.destroy #destroyメソッドで取得したデータを削除
     redirect_to :members, notice: "会員を削除しました" #メンバー一覧ページにリダイレクト。noticeを表示させる
+  end
+# ストロングパラメータ
+  private def member_params
+    attr = [:number,:name,:full_name,:sex,:birthday,:email,:administrator] #createアクションとupdateアクション共通の属性リスト配列をattrsにセット
+
+    attrs << :password if params[:action] == "create" #createアクションが実行されている時だけ:passwordをこの配列に加え.permitメソッドに渡している
+
+    params.require(:member).permit(attrs)
   end
 end
