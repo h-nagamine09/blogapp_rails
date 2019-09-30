@@ -1,0 +1,16 @@
+#border-color: #499; //変数 #border-colorに#499(色)を代入
+
+nav.pagenation (
+  font-size: 75%;
+  padding: 4px 8px;
+  border: 1px solid #border-color;
+  word-spacing: 4px;
+
+  span.current {
+    font-weight: bold;
+  }
+)
+
+// scssの特徴
+// 変数が使える
+// セレクタをネスト

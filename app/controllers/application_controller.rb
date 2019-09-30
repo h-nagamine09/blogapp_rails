@@ -42,7 +42,7 @@ end
   end
 
   private def rescue_internal_server_error(exeption)
-    render "errors/inter_nal_server_error", status: 500,layout: "error",
+    render "errors/internal_server_error", status: 500,layout: "error",
     formats: [:html]
   end
 end
