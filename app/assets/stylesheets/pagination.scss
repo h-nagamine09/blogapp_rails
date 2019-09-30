@@ -1,6 +1,6 @@
-#border-color: #499; //変数 #border-colorに#499(色)を代入
+$border-color: #499;
 
-nav.pagenation (
+nav.pagination {
   font-size: 75%;
   padding: 4px 8px;
   border: 1px solid #border-color;
@@ -9,7 +9,7 @@ nav.pagenation (
   span.current {
     font-weight: bold;
   }
-)
+}
 
 // scssの特徴
 // 変数が使える

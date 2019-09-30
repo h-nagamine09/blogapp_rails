@@ -2,6 +2,9 @@ class Member < ApplicationRecord
   has_secure_password #パスワードの保存と認証のための仕組み gemfileのbcryptを有効にすることによって使用可
 
   has_many :entries, dependent: :destroy #ブログ記事は会員に属する
+  has_one_attached :profile_picture
+  attribute :new_profile_picture
+  attribute :remove_profile_picture, :boolean
 
   #numberのバリデーション
   validates :number, presence: true, #空かどうかをチェックする
@@ -29,6 +32,24 @@ class Member < ApplicationRecord
     attr_accessor :current_password #Current_passwordをMemberクラスに追加
     validates :password, presence: {if: :current_password} #から文字でもnilでもない時に確認
 
+    validate if: :new_profile_picture do
+      if new_profile_picture.respond_to?(:content_type)
+        unless new_profile_picture.content_type.in?(ALLOWED_CONTENT_TYPES)
+          errors.add(:new_profile_picture, :invalid_image_type)
+        end
+      else
+        errors.add(:new_profile_picture, :invaild)
+      end
+    end
+
+    before_save do
+      if new_profile_picture
+        self.profile_picture = new_profile_picture
+      elsif remove_profile_picture
+        self.profile_picture.purge
+      end
+    end
+
   class << self
     def search(query)
       rel = order("number")
@@ -36,7 +57,6 @@ class Member < ApplicationRecord
         rel = rel.where("name LIKE ? OR full_name LIKE ?",
         "%#{query}%","%#{query}%")
       end
-      rel
     end
   end
 end

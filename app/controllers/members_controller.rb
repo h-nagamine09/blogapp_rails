@@ -60,7 +60,17 @@ class MembersController < ApplicationController
   end
 # ストロングパラメータ
   private def member_params
-    attr = [:number,:name,:full_name,:sex,:birthday,:email,:administrator] #createアクションとupdateアクション共通の属性リスト配列をattrsにセット
+    attrs = [
+             :new_profile_picture,
+             :remove_profile_picture,
+             :number,
+             :name,
+             :full_name,
+             :sex,
+             :birthday,
+             :email,
+             :administrator
+           ] #createアクションとupdateアクション共通の属性リスト配列をattrsにセット
 
     attrs << :password if params[:action] == "create" #createアクションが実行されている時だけ:passwordをこの配列に加え.permitメソッドに渡している
 
