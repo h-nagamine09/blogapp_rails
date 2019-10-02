@@ -53,4 +53,8 @@ gem 'kaminari-i18n'
 
 gem 'jquery-rails'
 
+gem 'acts_as_list'
+
 gem 'nokogiri'
+
+gem 'aws-sdk-s3' , require: false

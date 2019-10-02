@@ -2,6 +2,8 @@ class Member < ApplicationRecord
   has_secure_password #パスワードの保存と認証のための仕組み gemfileのbcryptを有効にすることによって使用可
 
   has_many :entries, dependent: :destroy #ブログ記事は会員に属する
+  has_many :votes, dependent: :destroy
+  has_many :voted_entries, through: :votes, source: :entry
   has_one_attached :profile_picture
   attribute :new_profile_picture
   attribute :remove_profile_picture, :boolean
@@ -50,6 +52,10 @@ class Member < ApplicationRecord
       end
     end
 
+    def votable_for?(entry)
+      entry && entry.author != self && !votes.exists?(entry_id: entry.id)
+    end
+    
   class << self
     def search(query)
       rel = order("number")

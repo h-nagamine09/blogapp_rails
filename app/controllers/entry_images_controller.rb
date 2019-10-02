@@ -7,7 +7,7 @@ class EntryImagesController < ApplicationController
 
   #画像一覧
   def index
-    @images = @entry.images.order(:id)
+    @images = @entry.images.order(:position)
   end
   #編集フォームにリダイレクト
   def show
@@ -48,6 +48,19 @@ class EntryImagesController < ApplicationController
     redirect_to [@entry, :images], notice: "画像を削除しました"
   end
 
+  #表示位置をあげる
+  def move_higher
+    @image = @entry.images.find(params[:id])
+    @image.move_higher
+    redirect_back fallback_location: [@entry, :images]
+  end
+
+  #表示位置を下げる
+  def move_lower
+    @image = @entry.images.find(params[:id])
+    @image.move_lower
+    redirect_back fallback_location:[:@entry, :images]
+  end
   #ストロングパラメータ
   private def image_params
     params.require(:image).permit(
