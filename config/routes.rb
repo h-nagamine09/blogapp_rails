@@ -17,6 +17,8 @@ Rails.application.routes.draw do
         resource :password, only: [:show, :edit, :update]
 
         resources :articles
-        resources :entries
+        resources :entries do
+          resources :images, controller: "entry_images"
+        end
       end
 end

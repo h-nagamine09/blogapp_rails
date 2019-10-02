@@ -3,6 +3,7 @@
     <li><%= Entry.status_text(entry.status) %></li>
     <% if current_member == entry.author %> <!--ログインしている会員がその記事の著者かどうか？-->
       <%= menu_link_to "編集", [:edit, entry] %> <!--著者だった場合、編集、削除ボタンを表示-->
+      <%= menu_link_to "画像", [entry, :images] %>
       <%= menu_link_to "削除", entry, method: :delete,
           data: { confirm: "本当に削除しますか?"} %>
     <% end %>

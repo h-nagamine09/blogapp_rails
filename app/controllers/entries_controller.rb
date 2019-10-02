@@ -54,7 +54,7 @@ class EntriesController < ApplicationController
   # ストロングパラメータ
   private def entry_params
     params.require(:entry).permit(
-      :member_id,:title,:bdoy,:posted_at,:status
+      :member_id,:title,:body,:posted_at,:status
     )
   end
 end
