@@ -1,5 +1,9 @@
 <% @page_title = "会員の詳細" %>
 <!-- @memberの属性を並べて表示している -->
-<h1><%= page_title %></h1>
+<h1><%= @page_title %></h1>
+
+<div class="toolbar">
+  <%= link_to "編集",[:edit, :admin, @member] %>
+</div>
 
 <% render "body" %>
